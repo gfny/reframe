@@ -40,7 +40,7 @@ var MonthSelect = function (_React$Component) {
   function MonthSelect(props) {
     _classCallCheck(this, MonthSelect);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(MonthSelect).call(this, props));
+    var _this = _possibleConstructorReturn(this, (MonthSelect.__proto__ || Object.getPrototypeOf(MonthSelect)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

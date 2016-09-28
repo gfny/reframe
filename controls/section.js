@@ -38,7 +38,7 @@ var Section = function (_React$Component) {
   function Section(props) {
     _classCallCheck(this, Section);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Section).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Section.__proto__ || Object.getPrototypeOf(Section)).call(this, props));
 
     _this.state = {
       collapsed: _this.props.collapsing

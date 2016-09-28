@@ -28,7 +28,7 @@ var Confirm = function (_Component) {
   function Confirm() {
     _classCallCheck(this, Confirm);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Confirm).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Confirm.__proto__ || Object.getPrototypeOf(Confirm)).apply(this, arguments));
   }
 
   _createClass(Confirm, [{

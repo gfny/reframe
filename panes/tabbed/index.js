@@ -36,7 +36,7 @@ var Tabbed = function (_React$Component) {
   function Tabbed() {
     _classCallCheck(this, Tabbed);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Tabbed).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Tabbed.__proto__ || Object.getPrototypeOf(Tabbed)).apply(this, arguments));
   }
 
   _createClass(Tabbed, [{

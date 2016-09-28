@@ -42,7 +42,7 @@ var Comments = function (_React$Component) {
   function Comments() {
     _classCallCheck(this, Comments);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Comments).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Comments.__proto__ || Object.getPrototypeOf(Comments)).apply(this, arguments));
   }
 
   _createClass(Comments, [{
@@ -92,7 +92,7 @@ var CommentsWrapper = function (_React$Component2) {
   function CommentsWrapper() {
     _classCallCheck(this, CommentsWrapper);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(CommentsWrapper).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CommentsWrapper.__proto__ || Object.getPrototypeOf(CommentsWrapper)).apply(this, arguments));
   }
 
   _createClass(CommentsWrapper, [{

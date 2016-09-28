@@ -30,7 +30,7 @@ var Radios = function (_React$Component) {
   function Radios(props) {
     _classCallCheck(this, Radios);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Radios).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Radios.__proto__ || Object.getPrototypeOf(Radios)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

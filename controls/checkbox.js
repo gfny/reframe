@@ -34,7 +34,7 @@ var Checkbox = function (_React$Component) {
   function Checkbox(props) {
     _classCallCheck(this, Checkbox);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Checkbox).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Checkbox.__proto__ || Object.getPrototypeOf(Checkbox)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

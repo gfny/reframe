@@ -57,7 +57,7 @@ var FetchContainer = function (_React$Component) {
   function FetchContainer(props) {
     _classCallCheck(this, FetchContainer);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(FetchContainer).call(this, props));
+    var _this = _possibleConstructorReturn(this, (FetchContainer.__proto__ || Object.getPrototypeOf(FetchContainer)).call(this, props));
 
     _this.state = {
       status: AWAITING,

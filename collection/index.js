@@ -46,7 +46,7 @@ var Collection = function (_React$Component) {
   function Collection(props) {
     _classCallCheck(this, Collection);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Collection).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Collection.__proto__ || Object.getPrototypeOf(Collection)).call(this, props));
 
     _this.state = {
       visible: _lodash2.default.map(_lodash2.default.filter(_lodash2.default.each(props.columns, function (column, index) {
@@ -80,13 +80,13 @@ var Collection = function (_React$Component) {
           if (_this2.props.status === 'LOADING') {
             return null; // <div className="ui active centered inline loader"></div>
           } else if (_this2.props.status === 'ERROR') {
-              return _react2.default.createElement(
-                'div',
-                { className: 'ui red segment' },
-                _react2.default.createElement('i', { className: 'warning circle icon' }),
-                ' Error loading records'
-              );
-            }
+            return _react2.default.createElement(
+              'div',
+              { className: 'ui red segment' },
+              _react2.default.createElement('i', { className: 'warning circle icon' }),
+              ' Error loading records'
+            );
+          }
         }()
       );
     }
@@ -202,7 +202,6 @@ var Collection = function (_React$Component) {
         (0, _lodash2.default)(keys).filter(RegExp.prototype.test.bind(/^collections.*visibility$/i)).forEach(function (k) {
           return _localforage2.default.removeItem(k);
         });
-        console.log("Purged cahced table visibility settings");
       });
     }
   }]);

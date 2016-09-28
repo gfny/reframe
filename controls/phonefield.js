@@ -30,7 +30,7 @@ var Phonefield = function (_React$Component) {
   function Phonefield(props) {
     _classCallCheck(this, Phonefield);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Phonefield).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Phonefield.__proto__ || Object.getPrototypeOf(Phonefield)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

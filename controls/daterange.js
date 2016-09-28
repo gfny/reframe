@@ -46,7 +46,7 @@ var DateRange = function (_React$Component) {
   function DateRange(props) {
     _classCallCheck(this, DateRange);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(DateRange).call(this, props));
+    var _this = _possibleConstructorReturn(this, (DateRange.__proto__ || Object.getPrototypeOf(DateRange)).call(this, props));
 
     _this.state = {
       customRange: false,

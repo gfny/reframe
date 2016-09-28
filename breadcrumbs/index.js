@@ -32,7 +32,7 @@ var Breadcrumbs = function (_React$Component) {
   function Breadcrumbs() {
     _classCallCheck(this, Breadcrumbs);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Breadcrumbs).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Breadcrumbs.__proto__ || Object.getPrototypeOf(Breadcrumbs)).apply(this, arguments));
   }
 
   _createClass(Breadcrumbs, [{

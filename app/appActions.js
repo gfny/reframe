@@ -25,7 +25,6 @@ var loadSession = exports.loadSession = function loadSession(endpoint) {
     }).tap(function (_ref) {
       var data = _ref.data;
 
-      console.log(data);
       dispatch({
         type: _appActionTypes.LOAD_SESSION,
         session: data

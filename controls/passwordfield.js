@@ -30,7 +30,7 @@ var Passwordfield = function (_React$Component) {
   function Passwordfield(props) {
     _classCallCheck(this, Passwordfield);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Passwordfield).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Passwordfield.__proto__ || Object.getPrototypeOf(Passwordfield)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

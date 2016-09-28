@@ -37,7 +37,7 @@ var CategoryTypeahead = function (_React$Component) {
   function CategoryTypeahead(props) {
     _classCallCheck(this, CategoryTypeahead);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(CategoryTypeahead).call(this, props));
+    return _possibleConstructorReturn(this, (CategoryTypeahead.__proto__ || Object.getPrototypeOf(CategoryTypeahead)).call(this, props));
   }
 
   _createClass(CategoryTypeahead, [{
@@ -77,7 +77,7 @@ var CategoryResultList = exports.CategoryResultList = function (_React$Component
   function CategoryResultList() {
     _classCallCheck(this, CategoryResultList);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(CategoryResultList).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CategoryResultList.__proto__ || Object.getPrototypeOf(CategoryResultList)).apply(this, arguments));
   }
 
   _createClass(CategoryResultList, [{

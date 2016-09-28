@@ -38,7 +38,6 @@ var Validator = function () {
       var rules = _objectWithoutProperties(spec, ['message']);
 
       var vcFuncWrapper = function vcFuncWrapper(func, arg, message, value) {
-        // console.log(func, arg, message,value);
         if (func(value, arg)) {
           return { pass: true, message: null };
         } else {
@@ -54,8 +53,6 @@ var Validator = function () {
 
       return function (value) {
         return _lodash2.default.reduce(validationChain, function (result, vcFunc) {
-          // console.log(result, vcFunc, value);
-
           var _vcFunc = vcFunc(value);
 
           var pass = _vcFunc.pass;

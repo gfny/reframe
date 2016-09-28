@@ -34,7 +34,7 @@ var Detail = function (_React$Component) {
   function Detail() {
     _classCallCheck(this, Detail);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Detail).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Detail.__proto__ || Object.getPrototypeOf(Detail)).apply(this, arguments));
   }
 
   _createClass(Detail, [{

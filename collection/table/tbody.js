@@ -38,7 +38,7 @@ var Tbody = function (_React$Component) {
   function Tbody() {
     _classCallCheck(this, Tbody);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Tbody).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Tbody.__proto__ || Object.getPrototypeOf(Tbody)).apply(this, arguments));
   }
 
   _createClass(Tbody, [{

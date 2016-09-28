@@ -42,7 +42,7 @@ var Format = function (_React$Component) {
   function Format() {
     _classCallCheck(this, Format);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Format).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Format.__proto__ || Object.getPrototypeOf(Format)).apply(this, arguments));
   }
 
   _createClass(Format, [{

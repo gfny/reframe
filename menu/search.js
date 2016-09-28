@@ -18,10 +18,6 @@ var _config = require('../utils/config');
 
 var _config2 = _interopRequireDefault(_config);
 
-var _logger = require('../utils/logger');
-
-var _logger2 = _interopRequireDefault(_logger);
-
 var _lodash = require('lodash');
 
 var _lodash2 = _interopRequireDefault(_lodash);
@@ -40,7 +36,7 @@ var Search = function (_React$Component) {
   function Search(props) {
     _classCallCheck(this, Search);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Search).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Search.__proto__ || Object.getPrototypeOf(Search)).call(this, props));
 
     _this.endpoint = props.endpoint || _config2.default.get('menu.search.endpoint', '/search');
     _this.resultField = props.resultField || _config2.default.get('menu.search.resultField', 'results');
@@ -76,7 +72,6 @@ var Search = function (_React$Component) {
   }, {
     key: 'chooseResult',
     value: function chooseResult(result, type) {
-      _logger2.default.log(type, result);
       var route = _lodash2.default.get(this.props.routes, type, null);
       if (route) {
         this.context.history.push(_lodash2.default.template(route, { interpolate: _config2.default.get('menu.search.urlInterpolate', _lodash2.default.templateSettings.interpolate) })(result));

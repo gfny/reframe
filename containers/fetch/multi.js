@@ -56,7 +56,7 @@ var FetchContainer = function (_React$Component) {
   function FetchContainer(props) {
     _classCallCheck(this, FetchContainer);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(FetchContainer).call(this, props));
+    var _this = _possibleConstructorReturn(this, (FetchContainer.__proto__ || Object.getPrototypeOf(FetchContainer)).call(this, props));
 
     _this.state = {
       status: AWAITING,
@@ -87,7 +87,7 @@ var FetchContainer = function (_React$Component) {
       var endpointPromises = _lodash2.default.mapValues(endpoints, function (e) {
         return _this2.api.loadJSON(_lodash2.default.get(e, 'url', e), _lodash2.default.get(e, 'options', {}));
       });
-      var propsPromiseObject = undefined;
+      var propsPromiseObject = void 0;
       if (allowFailures) {
         propsPromiseObject = _keys2.default.settle(_lodash2.default.merge(propsPromises, endpointPromises));
       } else {

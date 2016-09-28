@@ -34,7 +34,7 @@ var Emailfield = function (_React$Component) {
   function Emailfield(props) {
     _classCallCheck(this, Emailfield);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Emailfield).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Emailfield.__proto__ || Object.getPrototypeOf(Emailfield)).call(this, props));
 
     var value = _lodash2.default.toString(props.defaultValue);
     _this.state = { value: _this.formatValue(value) };

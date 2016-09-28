@@ -68,7 +68,7 @@ var OmniForm = function (_React$Component) {
   function OmniForm(props) {
     _classCallCheck(this, OmniForm);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(OmniForm).call(this, props));
+    var _this = _possibleConstructorReturn(this, (OmniForm.__proto__ || Object.getPrototypeOf(OmniForm)).call(this, props));
 
     _this.state = {
       loading: false,
@@ -119,7 +119,7 @@ var OmniForm = function (_React$Component) {
     value: function loadFieldOptions() {
       var _this4 = this;
 
-      return this.getAsyncFields().tap(console.log.bind(console)).then(function (opts) {
+      return this.getAsyncFields().then(function (opts) {
         return _this4.setState({ asyncFieldOptions: opts });
       });
     }
@@ -188,7 +188,7 @@ var OmniForm = function (_React$Component) {
       var errors = _errResponse$entity.errors;
       var message = _errResponse$entity.message;
 
-      var formMessage = undefined;
+      var formMessage = void 0;
       switch (code) {
         case 422:
           formMessage = {

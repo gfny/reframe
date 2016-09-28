@@ -34,7 +34,7 @@ var Datefield = function (_React$Component) {
   function Datefield(props) {
     _classCallCheck(this, Datefield);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Datefield).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Datefield.__proto__ || Object.getPrototypeOf(Datefield)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

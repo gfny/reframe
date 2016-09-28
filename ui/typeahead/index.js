@@ -64,7 +64,7 @@ var PolymorphicTypeahead = function (_React$Component) {
   function PolymorphicTypeahead() {
     _classCallCheck(this, PolymorphicTypeahead);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(PolymorphicTypeahead).apply(this, arguments));
+    return _possibleConstructorReturn(this, (PolymorphicTypeahead.__proto__ || Object.getPrototypeOf(PolymorphicTypeahead)).apply(this, arguments));
   }
 
   _createClass(PolymorphicTypeahead, [{

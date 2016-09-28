@@ -46,7 +46,7 @@ var FieldValidator = function (_React$Component) {
   function FieldValidator(props) {
     _classCallCheck(this, FieldValidator);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(FieldValidator).call(this, props));
+    var _this = _possibleConstructorReturn(this, (FieldValidator.__proto__ || Object.getPrototypeOf(FieldValidator)).call(this, props));
 
     _this.validationFunction = _validator2.default.create(_this.props.constraints);
     _this.state = {

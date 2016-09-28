@@ -32,7 +32,7 @@ var BatchActions = function (_React$Component) {
   function BatchActions() {
     _classCallCheck(this, BatchActions);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(BatchActions).apply(this, arguments));
+    return _possibleConstructorReturn(this, (BatchActions.__proto__ || Object.getPrototypeOf(BatchActions)).apply(this, arguments));
   }
 
   _createClass(BatchActions, [{

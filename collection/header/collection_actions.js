@@ -32,7 +32,7 @@ var CollectionActions = function (_React$Component) {
   function CollectionActions() {
     _classCallCheck(this, CollectionActions);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(CollectionActions).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CollectionActions.__proto__ || Object.getPrototypeOf(CollectionActions)).apply(this, arguments));
   }
 
   _createClass(CollectionActions, [{

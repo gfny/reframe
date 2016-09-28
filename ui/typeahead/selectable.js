@@ -38,7 +38,7 @@ var SelectableTypeahead = function (_React$Component) {
   function SelectableTypeahead(props) {
     _classCallCheck(this, SelectableTypeahead);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(SelectableTypeahead).call(this, props));
+    var _this = _possibleConstructorReturn(this, (SelectableTypeahead.__proto__ || Object.getPrototypeOf(SelectableTypeahead)).call(this, props));
 
     _this.defaultProps = {
       onChooseResult: _lodash2.default.noop,

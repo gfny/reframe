@@ -54,7 +54,7 @@ var Dateselect = function (_React$Component) {
   function Dateselect(props) {
     _classCallCheck(this, Dateselect);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Dateselect).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Dateselect.__proto__ || Object.getPrototypeOf(Dateselect)).call(this, props));
 
     _this.state = {
       focused: false,
@@ -167,7 +167,7 @@ var MonthField = function (_React$Component2) {
   function MonthField() {
     _classCallCheck(this, MonthField);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(MonthField).apply(this, arguments));
+    return _possibleConstructorReturn(this, (MonthField.__proto__ || Object.getPrototypeOf(MonthField)).apply(this, arguments));
   }
 
   _createClass(MonthField, [{
@@ -205,7 +205,7 @@ var DayField = function (_React$Component3) {
   function DayField() {
     _classCallCheck(this, DayField);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(DayField).apply(this, arguments));
+    return _possibleConstructorReturn(this, (DayField.__proto__ || Object.getPrototypeOf(DayField)).apply(this, arguments));
   }
 
   _createClass(DayField, [{
@@ -243,7 +243,7 @@ var YearField = function (_React$Component4) {
   function YearField() {
     _classCallCheck(this, YearField);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(YearField).apply(this, arguments));
+    return _possibleConstructorReturn(this, (YearField.__proto__ || Object.getPrototypeOf(YearField)).apply(this, arguments));
   }
 
   _createClass(YearField, [{

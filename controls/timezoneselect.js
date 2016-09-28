@@ -36,7 +36,7 @@ var Timezoneselect = function (_React$Component) {
   function Timezoneselect(props) {
     _classCallCheck(this, Timezoneselect);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Timezoneselect).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Timezoneselect.__proto__ || Object.getPrototypeOf(Timezoneselect)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

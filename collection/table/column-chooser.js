@@ -32,7 +32,7 @@ var ColumnChooser = function (_React$Component) {
   function ColumnChooser(props) {
     _classCallCheck(this, ColumnChooser);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ColumnChooser).call(this, props));
+    var _this = _possibleConstructorReturn(this, (ColumnChooser.__proto__ || Object.getPrototypeOf(ColumnChooser)).call(this, props));
 
     _this.state = {
       searchString: ''
@@ -90,7 +90,6 @@ var ColumnChooser = function (_React$Component) {
     value: function chooseColumn(e, key, visible) {
       e.preventDefault();
       e.stopPropagation();
-      console.log(key, visible);
       this.props.onChooseColumn(key, visible);
     }
   }, {

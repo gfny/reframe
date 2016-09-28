@@ -30,7 +30,7 @@ var Task = function (_React$Component) {
   function Task() {
     _classCallCheck(this, Task);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Task).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Task.__proto__ || Object.getPrototypeOf(Task)).apply(this, arguments));
   }
 
   _createClass(Task, [{

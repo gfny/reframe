@@ -46,7 +46,7 @@ var Cell = function (_React$Component) {
   function Cell() {
     _classCallCheck(this, Cell);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Cell).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Cell.__proto__ || Object.getPrototypeOf(Cell)).apply(this, arguments));
   }
 
   _createClass(Cell, [{

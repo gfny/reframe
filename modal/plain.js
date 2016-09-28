@@ -31,7 +31,7 @@ var PlainWindow = exports.PlainWindow = function (_React$Component) {
   function PlainWindow(props) {
     _classCallCheck(this, PlainWindow);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(PlainWindow).call(this, props));
+    var _this = _possibleConstructorReturn(this, (PlainWindow.__proto__ || Object.getPrototypeOf(PlainWindow)).call(this, props));
 
     _this.state = {
       top: 0

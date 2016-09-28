@@ -38,7 +38,7 @@ var Event = function (_React$Component) {
   function Event() {
     _classCallCheck(this, Event);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Event).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Event.__proto__ || Object.getPrototypeOf(Event)).apply(this, arguments));
   }
 
   _createClass(Event, [{

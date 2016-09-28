@@ -34,7 +34,7 @@ var Timefield = function (_React$Component) {
   function Timefield(props) {
     _classCallCheck(this, Timefield);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Timefield).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Timefield.__proto__ || Object.getPrototypeOf(Timefield)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

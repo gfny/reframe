@@ -28,10 +28,6 @@ var _when = require('when');
 
 var _when2 = _interopRequireDefault(_when);
 
-var _logger = require('../utils/logger');
-
-var _logger2 = _interopRequireDefault(_logger);
-
 var _core = require('./core.js');
 
 var _core2 = _interopRequireDefault(_core);
@@ -52,7 +48,7 @@ var ValidatedForm = function (_React$Component) {
   function ValidatedForm(props) {
     _classCallCheck(this, ValidatedForm);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(ValidatedForm).call(this, props));
+    var _this = _possibleConstructorReturn(this, (ValidatedForm.__proto__ || Object.getPrototypeOf(ValidatedForm)).call(this, props));
 
     var validators = {};
     var makeRules = function makeRules(field) {
@@ -65,7 +61,6 @@ var ValidatedForm = function (_React$Component) {
       }
     };
     _this.transformFields(props.sections, function (field) {
-      _logger2.default.log(field);
       if (field.fields) {
         _lodash2.default.each(field.fields, makeRules);
       } else {
@@ -129,7 +124,6 @@ var ValidatedForm = function (_React$Component) {
 
       (0, _when2.default)(fieldValues).then(function (data) {
         // Do all the validations. Call the parent onSubmit callback if they pass.
-        _logger2.default.log('Validating', data);
         var fieldRefs = _this2.refs.form.flattenRefs();
         var errors = (0, _lodash2.default)(data).mapValues(function (value, code) {
           if (_lodash2.default.get(fieldRefs[code], 'validate', null)) {

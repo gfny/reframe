@@ -34,7 +34,7 @@ var Moneyfield = function (_React$Component) {
   function Moneyfield(props) {
     _classCallCheck(this, Moneyfield);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Moneyfield).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Moneyfield.__proto__ || Object.getPrototypeOf(Moneyfield)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

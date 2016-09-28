@@ -34,7 +34,7 @@ var Textarea = function (_React$Component) {
   function Textarea(props) {
     _classCallCheck(this, Textarea);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Textarea).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Textarea.__proto__ || Object.getPrototypeOf(Textarea)).call(this, props));
 
     if (props.html) {
       _this.state = { value: props.defaultValue || null };

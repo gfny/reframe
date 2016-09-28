@@ -19,14 +19,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 /**
  * Global caching utility
  */
-
 var Cache = function () {
 
   /**
    * Create the cache k/v container
    * @return {Cache} Constructed Cache
    */
-
   function Cache() {
     _classCallCheck(this, Cache);
 
@@ -54,7 +52,7 @@ var Cache = function () {
       var _expire = _store$valueIndex._expire;
       var data = _store$valueIndex.data;
 
-      var result = undefined;
+      var result = void 0;
 
       if (_expire === Infinity) {
         result = data;

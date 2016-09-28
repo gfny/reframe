@@ -64,7 +64,7 @@ var FetchCollection = function (_React$Component) {
   function FetchCollection(props) {
     _classCallCheck(this, FetchCollection);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(FetchCollection).call(this, props));
+    var _this = _possibleConstructorReturn(this, (FetchCollection.__proto__ || Object.getPrototypeOf(FetchCollection)).call(this, props));
 
     _this.state = {
       asyncStatus: 'AWAITING',
@@ -84,9 +84,7 @@ var FetchCollection = function (_React$Component) {
       } else {
         var sort = _defineProperty({}, this.props.sort.key, this.props.sort.order);
         var parameters = _filter_context_helper2.default.toQueryParams(new _filter_context2.default({ sort: sort }));
-        return this.client.loadJSON(this.props.endpoint, _extends({}, this.props.options, parameters)).tap(function (response) {
-          return _logger2.default.info(response);
-        }).then(function (response) {
+        return this.client.loadJSON(this.props.endpoint, _extends({}, this.props.options, parameters)).then(function (response) {
           return response.records;
         });
       }

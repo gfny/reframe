@@ -58,7 +58,7 @@ var Application = function (_React$Component) {
   function Application(props) {
     _classCallCheck(this, Application);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Application).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Application.__proto__ || Object.getPrototypeOf(Application)).call(this, props));
 
     _this.store = (0, _redux.createStore)(_appReducer2.default, (0, _redux.applyMiddleware)(_reduxThunk2.default));
     return _this;

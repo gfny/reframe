@@ -39,7 +39,7 @@ var Typeahead = function (_React$Component) {
   function Typeahead(props) {
     _classCallCheck(this, Typeahead);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Typeahead).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Typeahead.__proto__ || Object.getPrototypeOf(Typeahead)).call(this, props));
 
     _this.state = {
       results: [],
@@ -289,7 +289,7 @@ var TypeaheadResultList = exports.TypeaheadResultList = function (_React$Compone
   function TypeaheadResultList() {
     _classCallCheck(this, TypeaheadResultList);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(TypeaheadResultList).apply(this, arguments));
+    return _possibleConstructorReturn(this, (TypeaheadResultList.__proto__ || Object.getPrototypeOf(TypeaheadResultList)).apply(this, arguments));
   }
 
   _createClass(TypeaheadResultList, [{

@@ -36,7 +36,7 @@ var TopbarMenu = function (_React$Component) {
   function TopbarMenu(props) {
     _classCallCheck(this, TopbarMenu);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(TopbarMenu).call(this, props));
+    var _this = _possibleConstructorReturn(this, (TopbarMenu.__proto__ || Object.getPrototypeOf(TopbarMenu)).call(this, props));
 
     _this.state = {};
     return _this;

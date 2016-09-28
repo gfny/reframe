@@ -38,7 +38,7 @@ var Modal = function (_React$Component) {
   function Modal(props) {
     _classCallCheck(this, Modal);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Modal).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Modal.__proto__ || Object.getPrototypeOf(Modal)).call(this, props));
 
     _this.currentModalRef = null;
     return _this;

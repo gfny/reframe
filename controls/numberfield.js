@@ -38,7 +38,7 @@ var Numberfield = function (_React$Component) {
   function Numberfield(props) {
     _classCallCheck(this, Numberfield);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Numberfield).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Numberfield.__proto__ || Object.getPrototypeOf(Numberfield)).call(this, props));
 
     var value = _lodash2.default.toString(props.defaultValue);
     _this.state = { value: _this.formatValue(value) };

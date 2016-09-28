@@ -36,7 +36,7 @@ var Messages = function (_React$Component) {
   function Messages() {
     _classCallCheck(this, Messages);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Messages).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Messages.__proto__ || Object.getPrototypeOf(Messages)).apply(this, arguments));
   }
 
   _createClass(Messages, [{

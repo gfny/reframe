@@ -32,7 +32,7 @@ var Flash = function (_React$Component) {
   function Flash() {
     _classCallCheck(this, Flash);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Flash).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Flash.__proto__ || Object.getPrototypeOf(Flash)).call(this, props));
 
     _this.state = {};
     return _this;

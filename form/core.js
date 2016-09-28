@@ -50,7 +50,7 @@ var Form = function (_React$Component) {
   function Form(props) {
     _classCallCheck(this, Form);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Form).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Form.__proto__ || Object.getPrototypeOf(Form)).call(this, props));
 
     _this.state = {
       frozen: false,
@@ -204,7 +204,7 @@ var Form = function (_React$Component) {
           // Check to see if this is a composite component
           if (field.type.composite) {
             // If there is a composite configuration specified, use that to map the fields
-            var dv = undefined;
+            var dv = void 0;
             if (field.composite) {
               dv = _lodash2.default.mapValues(field.composite, function (prefillKey) {
                 return _lodash2.default.get(prefills, prefillKey);
@@ -231,7 +231,7 @@ var Form = function (_React$Component) {
       if (this.props.asyncPassthrough) {
         this.props.onSubmit(formData);
       } else {
-        formData.tap(console.log.bind(console)).then(this.props.onSubmit);
+        formData.then(this.props.onSubmit);
       }
     }
   }, {
@@ -248,9 +248,9 @@ var Form = function (_React$Component) {
         if (_lodash2.default.get(ref, 'constructor.composite', null)) {
           return ref.getValue(); // Composite components should always return objects
         } else {
-            // Wrap the single return value into an object
-            return _defineProperty({}, code, ref.getValue());
-          }
+          // Wrap the single return value into an object
+          return _defineProperty({}, code, ref.getValue());
+        }
       }).reduce(_lodash2.default.merge, {}); // Collapse into single values object
 
       var valuePromises = _lodash2.default.mapValues(values, function (v) {
@@ -283,7 +283,6 @@ var Form = function (_React$Component) {
       var id = _ref3[0];
       var data = _ref3[1];
 
-      console.log('Filling', id, data);
       if (this.props.id === id) {
         (function () {
           var controlRefs = _this4.flattenRefs();

@@ -44,7 +44,7 @@ var Table = function (_React$Component) {
   function Table(props) {
     _classCallCheck(this, Table);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Table).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Table.__proto__ || Object.getPrototypeOf(Table)).call(this, props));
 
     _this.state = {
       columnWidths: null // Start with them as unknown

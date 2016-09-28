@@ -181,7 +181,7 @@ var Field = function (_React$Component) {
   function Field() {
     _classCallCheck(this, Field);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Field).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Field.__proto__ || Object.getPrototypeOf(Field)).apply(this, arguments));
   }
 
   _createClass(Field, [{

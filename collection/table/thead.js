@@ -32,7 +32,7 @@ var Thead = function (_React$Component) {
   function Thead() {
     _classCallCheck(this, Thead);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Thead).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Thead.__proto__ || Object.getPrototypeOf(Thead)).apply(this, arguments));
   }
 
   _createClass(Thead, [{

@@ -32,7 +32,7 @@ var Comment = function (_React$Component) {
   function Comment() {
     _classCallCheck(this, Comment);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Comment).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Comment.__proto__ || Object.getPrototypeOf(Comment)).apply(this, arguments));
   }
 
   _createClass(Comment, [{

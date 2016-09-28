@@ -66,7 +66,7 @@ var FileField = function (_React$Component) {
   function FileField(props) {
     _classCallCheck(this, FileField);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(FileField).call(this, props));
+    var _this = _possibleConstructorReturn(this, (FileField.__proto__ || Object.getPrototypeOf(FileField)).call(this, props));
 
     _this.state = {
       focused: false,
@@ -373,7 +373,6 @@ var FileField = function (_React$Component) {
           });
           _this4.r.on('error', reject);
           _this4.r.on('fileSuccess', function (_file, r) {
-            _logger2.default.log(_file, r);
             var resp = JSON.parse(r);
             var assetId = _lodash2.default.get(resp, 'asset_id', null) || _lodash2.default.get(resp, 'id', null);
             fileResults.push(assetId);
@@ -381,11 +380,10 @@ var FileField = function (_React$Component) {
           _this4.r.upload();
         }).tap(function () {
           return _this4.setState({ uploadInProgress: false, uploadProcessing: true });
-        }).tap(_logger2.default.log.bind(_logger2.default));
+        });
       };
 
       var processPromise = function processPromise(ids) {
-        _logger2.default.log("Processing...", ids);
         return (0, _sequence2.default)(_lodash2.default.map(ids, function (i) {
           return function () {
             return _this4.api.patch(_this4.props.assetPath + '/' + i + '/process');
@@ -396,8 +394,6 @@ var FileField = function (_React$Component) {
       };
 
       this.rPromise = (0, _pipeline2.default)([uploadPromise, processPromise]).tap(function (ids) {
-        return _logger2.default.log("Uploading and Processing complete", ids);
-      }).tap(function (ids) {
         return _this4.setState({ preview: _lodash2.default.first(ids) });
       }).then(function (assetIds) {
         if (single) {
@@ -409,7 +405,7 @@ var FileField = function (_React$Component) {
         return _this4.setState({ uploadProcessing: false, uploadComplete: true });
       }).tap(function () {
         return _this4.mountResumable();
-      }).tap(_logger2.default.log.bind(_logger2.default)).catch(function (failure) {
+      }).catch(function (failure) {
         _this4.setState({ uploadProcessing: false, uploadComplete: false, uploadInProgress: false, uploadFailed: true });
         _logger2.default.error(failure);
       });
@@ -430,12 +426,12 @@ var FileField = function (_React$Component) {
   }, {
     key: 'onFileSuccess',
     value: function onFileSuccess(file, serverResponse) {
-      _logger2.default.log(file, serverResponse);
+      // noop
     }
   }, {
     key: 'onFileError',
     value: function onFileError(file, serverResponse) {
-      _logger2.default.log(file, serverResponse);
+      _logger2.default.error(file, serverResponse);
       var newFailures = this.state.filesFailed.concat([file.uniqueIdentifier]);
       this.setState({
         filesFailed: newFailures
@@ -448,7 +444,6 @@ var FileField = function (_React$Component) {
   }, {
     key: 'onFileProgress',
     value: function onFileProgress(file) {
-      _logger2.default.log(file.fileName, file.progress());
       $(this.refs.fileTable).find('#' + file.uniqueIdentifier).progress({ percent: Math.floor(file.progress() * 100) });
       if (this.state.uploadInProgress) {
         $(this.refs.wrapper).find(".file.progress").progress({
@@ -638,7 +633,7 @@ var FilePreview = function (_React$Component2) {
   function FilePreview() {
     _classCallCheck(this, FilePreview);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(FilePreview).apply(this, arguments));
+    return _possibleConstructorReturn(this, (FilePreview.__proto__ || Object.getPrototypeOf(FilePreview)).apply(this, arguments));
   }
 
   _createClass(FilePreview, [{

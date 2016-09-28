@@ -32,7 +32,7 @@ var Card = function (_React$Component) {
   function Card() {
     _classCallCheck(this, Card);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Card).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Card.__proto__ || Object.getPrototypeOf(Card)).apply(this, arguments));
   }
 
   _createClass(Card, [{

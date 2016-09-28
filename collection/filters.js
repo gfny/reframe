@@ -32,7 +32,7 @@ var CollectionFilters = function (_React$Component) {
   function CollectionFilters() {
     _classCallCheck(this, CollectionFilters);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(CollectionFilters).apply(this, arguments));
+    return _possibleConstructorReturn(this, (CollectionFilters.__proto__ || Object.getPrototypeOf(CollectionFilters)).apply(this, arguments));
   }
 
   _createClass(CollectionFilters, [{

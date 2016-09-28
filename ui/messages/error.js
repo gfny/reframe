@@ -32,7 +32,7 @@ var ErrorMessage = function (_React$Component) {
   function ErrorMessage() {
     _classCallCheck(this, ErrorMessage);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(ErrorMessage).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ErrorMessage.__proto__ || Object.getPrototypeOf(ErrorMessage)).apply(this, arguments));
   }
 
   _createClass(ErrorMessage, [{

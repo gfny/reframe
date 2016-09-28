@@ -34,7 +34,7 @@ var Select = function (_React$Component) {
   function Select(props) {
     _classCallCheck(this, Select);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Select).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Select.__proto__ || Object.getPrototypeOf(Select)).call(this, props));
 
     _this.NO_SELECTION = 'EMPTY_' + Math.floor(Math.random() * 999999).toString(36);
     _this.state = {

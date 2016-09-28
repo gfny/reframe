@@ -36,7 +36,7 @@ var NumberSelect = function (_React$Component) {
   function NumberSelect() {
     _classCallCheck(this, NumberSelect);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(NumberSelect).apply(this, arguments));
+    return _possibleConstructorReturn(this, (NumberSelect.__proto__ || Object.getPrototypeOf(NumberSelect)).apply(this, arguments));
   }
 
   _createClass(NumberSelect, [{
@@ -52,8 +52,8 @@ var NumberSelect = function (_React$Component) {
         }
       } else {
         for (var i = start; i >= end; i--) {
-          var value = this.props.zeroPad ? ('0' + parseInt(i)).slice(-2) : i;
-          options.push({ key: value, value: value });
+          var _value = this.props.zeroPad ? ('0' + parseInt(i)).slice(-2) : i;
+          options.push({ key: _value, value: _value });
         }
       }
       return _react2.default.createElement(_select2.default, _extends({}, this.props, { options: options, ref: 'control' }));

@@ -30,7 +30,7 @@ var Urlfield = function (_React$Component) {
   function Urlfield(props) {
     _classCallCheck(this, Urlfield);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Urlfield).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Urlfield.__proto__ || Object.getPrototypeOf(Urlfield)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

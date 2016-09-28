@@ -30,7 +30,7 @@ var Tab = function (_React$Component) {
   function Tab() {
     _classCallCheck(this, Tab);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Tab).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Tab.__proto__ || Object.getPrototypeOf(Tab)).apply(this, arguments));
   }
 
   _createClass(Tab, [{

@@ -40,7 +40,7 @@ var Stateselect = function (_React$Component) {
   function Stateselect(props) {
     _classCallCheck(this, Stateselect);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Stateselect).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Stateselect.__proto__ || Object.getPrototypeOf(Stateselect)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

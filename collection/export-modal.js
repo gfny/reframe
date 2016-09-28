@@ -36,7 +36,7 @@ var ExportModal = function (_React$Component) {
   function ExportModal() {
     _classCallCheck(this, ExportModal);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(ExportModal).apply(this, arguments));
+    return _possibleConstructorReturn(this, (ExportModal.__proto__ || Object.getPrototypeOf(ExportModal)).apply(this, arguments));
   }
 
   _createClass(ExportModal, [{

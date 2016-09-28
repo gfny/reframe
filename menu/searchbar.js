@@ -36,7 +36,7 @@ var Searchbar = function (_React$Component) {
   function Searchbar(props) {
     _classCallCheck(this, Searchbar);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Searchbar).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Searchbar.__proto__ || Object.getPrototypeOf(Searchbar)).call(this, props));
 
     _this.state = {};
     return _this;

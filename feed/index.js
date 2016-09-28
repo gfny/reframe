@@ -42,7 +42,7 @@ var Feed = function (_React$Component) {
   function Feed() {
     _classCallCheck(this, Feed);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(Feed).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Feed.__proto__ || Object.getPrototypeOf(Feed)).apply(this, arguments));
   }
 
   _createClass(Feed, [{
@@ -92,7 +92,7 @@ var FeedWrapper = function (_React$Component2) {
   function FeedWrapper() {
     _classCallCheck(this, FeedWrapper);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(FeedWrapper).apply(this, arguments));
+    return _possibleConstructorReturn(this, (FeedWrapper.__proto__ || Object.getPrototypeOf(FeedWrapper)).apply(this, arguments));
   }
 
   _createClass(FeedWrapper, [{

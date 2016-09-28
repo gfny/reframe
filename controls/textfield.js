@@ -34,7 +34,7 @@ var Textfield = function (_React$Component) {
   function Textfield(props) {
     _classCallCheck(this, Textfield);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Textfield).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Textfield.__proto__ || Object.getPrototypeOf(Textfield)).call(this, props));
 
     var value = _lodash2.default.toString(props.defaultValue);
     _this.state = { value: _this.formatValue(value) };

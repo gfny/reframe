@@ -30,7 +30,7 @@ var Button = function (_React$Component) {
   function Button(props) {
     _classCallCheck(this, Button);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Button).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

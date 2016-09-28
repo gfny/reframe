@@ -34,7 +34,7 @@ var Countryselect = function (_React$Component) {
   function Countryselect(props) {
     _classCallCheck(this, Countryselect);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Countryselect).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Countryselect.__proto__ || Object.getPrototypeOf(Countryselect)).call(this, props));
 
     _this.state = { value: props.defaultValue || null };
     return _this;

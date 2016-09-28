@@ -51,7 +51,7 @@ var Menu = function (_React$Component) {
   function Menu(props) {
     _classCallCheck(this, Menu);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Menu).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Menu.__proto__ || Object.getPrototypeOf(Menu)).call(this, props));
 
     _this.state = { displayMode: TOPBAR, visible: false };
     _lodash2.default.defer(_this.onViewportResize.bind(_this));

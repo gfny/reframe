@@ -36,7 +36,7 @@ var OffcanvasMenu = function (_React$Component) {
   function OffcanvasMenu(props) {
     _classCallCheck(this, OffcanvasMenu);
 
-    return _possibleConstructorReturn(this, Object.getPrototypeOf(OffcanvasMenu).call(this, props));
+    return _possibleConstructorReturn(this, (OffcanvasMenu.__proto__ || Object.getPrototypeOf(OffcanvasMenu)).call(this, props));
   }
 
   _createClass(OffcanvasMenu, [{

@@ -64,7 +64,7 @@ var InfiniteCollection = function (_React$Component) {
   function InfiniteCollection(props) {
     _classCallCheck(this, InfiniteCollection);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(InfiniteCollection).call(this, props));
+    var _this = _possibleConstructorReturn(this, (InfiniteCollection.__proto__ || Object.getPrototypeOf(InfiniteCollection)).call(this, props));
 
     _this.state = {
       view: 'table',
@@ -136,9 +136,9 @@ var InfiniteCollection = function (_React$Component) {
             var key = _this2.state.sort.key;
             _this2.setState({ sort: { key: key, order: order } });
           } else {
-            var order = 'asc';
-            var key = col;
-            _this2.setState({ sort: { key: key, order: order } });
+            var _order = 'asc';
+            var _key = col;
+            _this2.setState({ sort: { key: _key, order: _order } });
           }
           _lodash2.default.defer(function () {
             return _this2.refs.container.reset();

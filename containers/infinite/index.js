@@ -69,7 +69,7 @@ var InfiniteContainer = function (_React$Component) {
   function InfiniteContainer(props) {
     _classCallCheck(this, InfiniteContainer);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(InfiniteContainer).call(this, props));
+    var _this = _possibleConstructorReturn(this, (InfiniteContainer.__proto__ || Object.getPrototypeOf(InfiniteContainer)).call(this, props));
 
     _this.state = {
       status: AWAITING,
@@ -109,16 +109,10 @@ var InfiniteContainer = function (_React$Component) {
 
       var query = _history2.default.createLocation(location).query;
 
-      var endpointPromise = this.api.loadJSON(location, _extends({}, query, this.props.endpointOptions)).tap(function (e) {
-        return _logger2.default.log(e);
-      });
-      var propsPromiseObject = _keys2.default.all(propsPromises).tap(function (e) {
-        return _logger2.default.log(e);
-      });
+      var endpointPromise = this.api.loadJSON(location, _extends({}, query, this.props.endpointOptions));
+      var propsPromiseObject = _keys2.default.all(propsPromises);
 
-      _when2.default.all([endpointPromise, propsPromiseObject]).tap(function (r) {
-        return _logger2.default.log(r);
-      }).then(function (_ref) {
+      _when2.default.all([endpointPromise, propsPromiseObject]).then(function (_ref) {
         var _ref2 = _slicedToArray(_ref, 2);
 
         var endpointData = _ref2[0];
@@ -173,8 +167,6 @@ var InfiniteContainer = function (_React$Component) {
       var topOfView = window.pageYOffset;
       var bottomOfView = topOfView + windowHeight;
       var distanceFromBottom = documentHeight - bottomOfView;
-
-      //console.log(windowHeight, documentHeight, topOfView, bottomOfView, distanceFromBottom)
 
       // There's a dirty trick where the browser thinks it's below the bottom while the page is loading.
       // The distanceFromBottom > 0 stops the trigger.

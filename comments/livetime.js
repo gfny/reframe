@@ -32,7 +32,7 @@ var LiveTime = function (_React$Component) {
   function LiveTime(props) {
     _classCallCheck(this, LiveTime);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(LiveTime).call(this, props));
+    var _this = _possibleConstructorReturn(this, (LiveTime.__proto__ || Object.getPrototypeOf(LiveTime)).call(this, props));
 
     _this.state = {
       timeAgo: (0, _moment2.default)(props.time).fromNow()

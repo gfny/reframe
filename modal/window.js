@@ -44,7 +44,7 @@ var Window = function (_React$Component) {
   function Window(props) {
     _classCallCheck(this, Window);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Window).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Window.__proto__ || Object.getPrototypeOf(Window)).call(this, props));
 
     _this.state = {
       top: 0

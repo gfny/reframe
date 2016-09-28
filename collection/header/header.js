@@ -46,7 +46,7 @@ var Header = function (_React$Component) {
   function Header(props) {
     _classCallCheck(this, Header);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Header).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
 
     _this.state = {
       showFilters: props.showFilters
@@ -137,7 +137,7 @@ var Header = function (_React$Component) {
         return _react2.default.createElement('div', { className: 'borderless item' });
       }
       if (recordCount !== null) {
-        var inflection = undefined;
+        var inflection = void 0;
         if (_lodash2.default.isArray(entity)) {
           inflection = recordCount !== 1 ? entity[1] : entity[0];
         } else {
