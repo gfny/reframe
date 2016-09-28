@@ -1,7 +1,6 @@
 import React from 'react'
 import Typeahead from '../ui/typeahead'
 import Config from '../utils/config'
-import Logger from '../utils/logger'
 import _ from 'lodash'
 
 export default class Search extends React.Component {
@@ -54,7 +53,6 @@ export default class Search extends React.Component {
   }
 
   chooseResult(result, type) {
-    Logger.log(type, result)
     const route = _.get(this.props.routes, type, null)
     if(route) {
       this.context.history.push(_.template(route, {interpolate: Config.get('menu.search.urlInterpolate', _.templateSettings.interpolate)})(result))

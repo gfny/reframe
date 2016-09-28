@@ -256,7 +256,6 @@ export default class FileField extends React.Component {
           this.r.on('complete', () => resolve(fileResults))
           this.r.on('error', reject)
           this.r.on('fileSuccess', (_file, r) => {
-            Logger.log(_file, r)
             let resp = JSON.parse(r)
             let assetId = _.get(resp, 'asset_id', null) || _.get(resp, 'id', null)
             fileResults.push(assetId)
@@ -264,11 +263,9 @@ export default class FileField extends React.Component {
           this.r.upload()
         })
         .tap(() => this.setState({uploadInProgress: false, uploadProcessing: true}))
-        .tap(Logger.log.bind(Logger))
     }
 
   const processPromise = ids => {
-    Logger.log("Processing...", ids)
     return whenSequence(
       _.map(
         ids,
@@ -280,7 +277,6 @@ export default class FileField extends React.Component {
     }
 
   this.rPromise = whenPipeline([uploadPromise, processPromise])
-    .tap(ids => Logger.log("Uploading and Processing complete", ids))
     .tap(ids => this.setState({preview: _.first(ids)}))
     .then(assetIds => {
       if(single) {
@@ -292,7 +288,6 @@ export default class FileField extends React.Component {
     })
     .tap(() => this.setState({uploadProcessing: false, uploadComplete: true}))
     .tap(() => this.mountResumable())
-    .tap(Logger.log.bind(Logger))
     .catch(failure => {
       this.setState({uploadProcessing: false, uploadComplete: false, uploadInProgress: false, uploadFailed: true})
       Logger.error(failure)
@@ -311,11 +306,11 @@ export default class FileField extends React.Component {
   }
 
   onFileSuccess(file, serverResponse) {
-    Logger.log(file, serverResponse)
+    // noop
   }
 
   onFileError(file, serverResponse) {
-    Logger.log(file, serverResponse)
+    Logger.error(file, serverResponse)
     const newFailures = this.state.filesFailed.concat([file.uniqueIdentifier])
     this.setState({
       filesFailed: newFailures
@@ -327,7 +322,6 @@ export default class FileField extends React.Component {
   }
 
   onFileProgress(file) {
-    Logger.log(file.fileName, file.progress())
     $(this.refs.fileTable).find(`#${file.uniqueIdentifier}`).progress({percent: Math.floor(file.progress() * 100)})
     if(this.state.uploadInProgress) {
       $(this.refs.wrapper).find(".file.progress").progress({

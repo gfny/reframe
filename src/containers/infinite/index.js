@@ -107,11 +107,9 @@ export default class InfiniteContainer extends React.Component {
     const query = history.createLocation(location).query
 
     const endpointPromise = this.api.loadJSON(location, { ...query, ...this.props.endpointOptions })
-      .tap(e => Logger.log(e))
-    const propsPromiseObject = whenKeys.all(propsPromises).tap(e => Logger.log(e))
+    const propsPromiseObject = whenKeys.all(propsPromises)
 
     when.all([ endpointPromise, propsPromiseObject ])
-      .tap(r => Logger.log(r))
       .then(
         ([endpointData, propsData]) => {
           const nextPage = this.props.getNextPageUrl(endpointData)
@@ -170,8 +168,6 @@ export default class InfiniteContainer extends React.Component {
     let topOfView = window.pageYOffset;
     let bottomOfView = topOfView + windowHeight;
     let distanceFromBottom = documentHeight - bottomOfView;
-
-    //console.log(windowHeight, documentHeight, topOfView, bottomOfView, distanceFromBottom)
 
     // There's a dirty trick where the browser thinks it's below the bottom while the page is loading.
     // The distanceFromBottom > 0 stops the trigger.

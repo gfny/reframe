@@ -63,7 +63,6 @@ export default class Validator {
     let {message, ...rules} = spec;
 
     let vcFuncWrapper = function(func, arg, message, value) {
-      // console.log(func, arg, message,value);
       if(func(value, arg)) {
         return {pass: true, message: null}
       }
@@ -81,7 +80,6 @@ export default class Validator {
 
     return function(value) {
       return _.reduce(validationChain, (result, vcFunc) => {
-        // console.log(result, vcFunc, value);
         let {pass, message} = vcFunc(value);
         let fail = !pass;
 

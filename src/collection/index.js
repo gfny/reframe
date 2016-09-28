@@ -219,7 +219,6 @@ export default class Collection extends React.Component {
         _(keys)
           .filter(RegExp.prototype.test.bind(/^collections.*visibility$/i))
           .forEach(k => localForage.removeItem(k))
-        console.log("Purged cahced table visibility settings")
       })
   }
 

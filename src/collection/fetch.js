@@ -42,7 +42,6 @@ export default class FetchCollection extends React.Component {
       const sort = {[this.props.sort.key]: this.props.sort.order}
       const parameters = FilterContextHelper.toQueryParams(new FilterContext({sort}))
       return this.client.loadJSON(this.props.endpoint, {...this.props.options, ...parameters})
-        .tap(response => Logger.info(response))
         .then(response => response.records)
     }
   }

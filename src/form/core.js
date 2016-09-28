@@ -187,9 +187,7 @@ class Form extends React.Component {
       this.props.onSubmit(formData)
     }
     else {
-      formData
-        .tap(console.log.bind(console))
-        .then(this.props.onSubmit)
+      formData.then(this.props.onSubmit)
     }
   }
 
@@ -225,7 +223,6 @@ class Form extends React.Component {
   }
 
   onFill([id, data]) {
-    console.log('Filling', id, data)
     if(this.props.id === id) {
       let controlRefs = this.flattenRefs()
       let commonKeys = _.intersection(_.keys(controlRefs), _.keys(data))

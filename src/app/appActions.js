@@ -17,7 +17,6 @@ export const loadSession = (endpoint) => {
         data: api.loadJSON(endpoint)
       })
       .tap(({data}) => {
-        console.log(data)
         dispatch({
           type: LOAD_SESSION,
           session: data

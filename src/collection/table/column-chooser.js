@@ -60,7 +60,6 @@ export default class ColumnChooser extends React.Component {
   chooseColumn(e, key, visible) {
     e.preventDefault()
     e.stopPropagation()
-    console.log(key, visible)
     this.props.onChooseColumn(key, visible)
   }
 

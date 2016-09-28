@@ -75,7 +75,6 @@ export default class OmniForm extends React.Component {
 
   loadFieldOptions() {
     return this.getAsyncFields()
-      .tap(console.log.bind(console))
       .then(opts => this.setState({asyncFieldOptions: opts}))
   }
 

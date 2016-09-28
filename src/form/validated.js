@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom'
 import _ from 'lodash'
 import Validator from '../utils/validator'
 import when from 'when'
-import Logger from '../utils/logger'
 import Form from './core.js'
 
 export default class ValidatedForm extends React.Component {
@@ -30,7 +29,6 @@ export default class ValidatedForm extends React.Component {
       }
     }
     this.transformFields(props.sections, field => {
-      Logger.log(field)
       if(field.fields) {
         _.each(field.fields, makeRules)
       }
@@ -87,7 +85,6 @@ export default class ValidatedForm extends React.Component {
   onSubmit(fieldValues) {
     when(fieldValues).then(data => {
       // Do all the validations. Call the parent onSubmit callback if they pass.
-      Logger.log('Validating', data);
       const fieldRefs = this.refs.form.flattenRefs()
       let errors = _(data)
         .mapValues((value, code) => {
