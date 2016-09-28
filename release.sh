@@ -29,7 +29,7 @@ if (../node_modules/babel-cli/bin/babel.js -d ./ ../src/); then
   git add .
   git commit -m "Release $VER" -e
   git tag "$VER"
-  git push
+  git push --tags
 else
   echo " "
   echo "There were errors compiling your code. "
