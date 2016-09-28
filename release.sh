@@ -7,12 +7,17 @@ if ! mkdir _release; then
   exit 1
 fi
 
-git clone -b release git@github.com:thinktopography/reframe _release
+git clone -b release git@github.com:gfny/reframe _release
 cd _release
+
+# Delete the source files
 find . -maxdepth 1 ! -name '.*' -type d -exec rm -rf {} +
+
 cp -f ../package.json ./package.json
 if (../node_modules/babel-cli/bin/babel.js -d ./ ../src/); then
   sass -Cq --scss --compass --sourcemap=none ../src/reframe.scss ./reframe.css
+
+  # Why?
   cp ./reframe.css ./reframe.scss
 
   VER=`cat package.json | sed -n 's/.*"version": "\(.*\)".*/\1/p'`
@@ -27,8 +32,11 @@ if (../node_modules/babel-cli/bin/babel.js -d ./ ../src/); then
   git push
 else
   echo " "
-  echo "There were errors compiling your code. Please fix these problems before publishing a release."; exit 1
+  echo "There were errors compiling your code. "
+  echo "Please fix these problems before publishing a release."
+  exit 1
 fi
 
+# Clean up
 cd ../
 rm -rf _release
